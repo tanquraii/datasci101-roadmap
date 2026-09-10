@@ -1,0 +1,214 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "level": "Level 1: Math",
+      "description": "Before you dive into Data Science you need to know the basics of Linear Algebra, Calculus, Probability, and Statistics.",
+      "topics": [
+        {
+          "id": "derivatives",
+          "title": "Derivatives",
+          "description": "Fundamental concept of differential calculus representing rates of change, gradients, and optimization foundations.",
+          "urls": [
+            "https://www.khanacademy.org/math/differential-calculus",
+            "https://www.3blue1brown.com/topics/calculus"
+          ]
+        },
+        {
+          "id": "matrix-multiplication",
+          "title": "Matrix Multiplication",
+          "description": "Core linear algebra operation used for transforming feature vectors, linear projections, and neural network layers.",
+          "urls": [
+            "https://www.khanacademy.org/math/linear-algebra",
+            "https://www.3blue1brown.com/topics/linear-algebra"
+          ]
+        },
+        {
+          "id": "vectors-and-spaces",
+          "title": "Vectors & Vector Spaces",
+          "description": "Understanding vectors, dot products, vector norms (L1/L2), projections, and linear independence.",
+          "urls": [
+            "https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces",
+            "https://www.3blue1brown.com/topics/linear-algebra"
+          ]
+        },
+        {
+          "id": "eigenvalues-and-eigenvectors",
+          "title": "Eigenvalues & Eigenvectors",
+          "description": "Spectral decomposition methods essential for understanding Principal Component Analysis (PCA) and dimensionality reduction.",
+          "urls": [
+            "https://www.khanacademy.org/math/linear-algebra/alternate-bases",
+            "https://www.3blue1brown.com/topics/linear-algebra"
+          ]
+        },
+        {
+          "id": "partial-derivatives-and-gradients",
+          "title": "Partial Derivatives & Gradients",
+          "description": "Multivariate calculus concepts required to understand gradient descent and loss function optimization.",
+          "urls": [
+            "https://www.khanacademy.org/math/multivariable-calculus",
+            "https://www.3blue1brown.com/topics/calculus"
+          ]
+        },
+        {
+          "id": "probability-basics-and-bayes",
+          "title": "Probability Fundamentals & Bayes' Theorem",
+          "description": "Conditional probability, independence, joint distributions, and Bayesian inference core to machine learning models.",
+          "urls": [
+            "https://www.khanacademy.org/math/statistics-probability/probability-library",
+            "https://www.statquest.org/"
+          ]
+        },
+        {
+          "id": "descriptive-and-inferential-stats",
+          "title": "Descriptive & Inferential Statistics",
+          "description": "Mean, variance, standard deviation, distributions (Gaussian), hypothesis testing, p-values, and confidence intervals.",
+          "urls": [
+            "https://www.khanacademy.org/math/statistics-probability",
+            "https://www.statquest.org/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level-2",
+      "level": "Level 2: Python & Data Science Tooling",
+      "description": "Master core Python fundamentals alongside essential libraries like NumPy and Pandas for data manipulation and analysis.",
+      "topics": [
+        {
+          "id": "data-types",
+          "title": "Data Types & Structures",
+          "description": "Core primitives and built-in data structures including lists, dictionaries, tuples, sets, and string manipulation.",
+          "urls": [
+            "https://docs.python.org/3/tutorial/datastructures.html",
+            "https://realpython.com/python-data-types/"
+          ]
+        },
+        {
+          "id": "loops",
+          "title": "Control Flow & Iteration",
+          "description": "Iterative control flow using `for` and `while` loops, list/dict comprehensions, and generator expressions.",
+          "urls": [
+            "https://realpython.com/python-for-loop/",
+            "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+          ]
+        },
+        {
+          "id": "conditions",
+          "title": "Conditions & Logic",
+          "description": "Conditional branching logic using `if`, `elif`, `else` statements, ternary operators, and logical boolean operations.",
+          "urls": [
+            "https://realpython.com/python-conditional-statements/",
+            "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+          ]
+        },
+        {
+          "id": "functions",
+          "title": "Functions & Scope",
+          "description": "Modular code reuse using functions, `*args`/`**kwargs`, lambda functions, closures, variable scope, and type hints.",
+          "urls": [
+            "https://realpython.com/defining-your-own-python-function/",
+            "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+          ]
+        },
+        {
+          "id": "oop",
+          "title": "Object-Oriented Programming (OOP)",
+          "description": "Classes, objects, inheritance, encapsulation, polymorphism, and dunder magic methods (`__init__`, `__repr__`).",
+          "urls": [
+            "https://realpython.com/python3-object-oriented-programming/",
+            "https://docs.python.org/3/tutorial/classes.html"
+          ]
+        },
+        {
+          "id": "file-io-and-virtual-envs",
+          "title": "Environments & Modules",
+          "description": "Virtual environments (`venv`, `conda`), package management via `pip`, file I/O (JSON/CSV), and module imports.",
+          "urls": [
+            "https://realpython.com/python-virtual-environments-a-primer/",
+            "https://docs.python.org/3/tutorial/modules.html"
+          ]
+        },
+        {
+          "id": "numpy-fundamentals",
+          "title": "NumPy Numerical Computing",
+          "description": "N-dimensional arrays (`ndarray`), vectorized math operations, array slicing, reshaping, and broadcasting mechanisms.",
+          "urls": [
+            "https://numpy.org/doc/stable/user/absolute_beginners.html",
+            "https://realpython.com/numpy-tutorial/"
+          ]
+        },
+        {
+          "id": "pandas-data-wrangling",
+          "title": "Pandas Data Manipulation",
+          "description": "DataFrames, Series, indexing (`loc`/`iloc`), filtering, handling missing values, `groupby` aggregations, and merging.",
+          "urls": [
+            "https://pandas.pydata.org/docs/user_guide/10min.html",
+            "https://realpython.com/pandas-dataframe/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level-3",
+      "level": "Level 3: Classic Machine Learning",
+      "description": "Master foundational supervised and unsupervised algorithms, validation strategies, feature preprocessing, and model evaluation metrics.",
+      "topics": [
+        {
+          "id": "linear-and-logistic-regression",
+          "title": "Linear & Regularized Models",
+          "description": "Predicting continuous and categorical targets using OLS, Logistic Regression, Ridge (L2), Lasso (L1), and ElasticNet regularization.",
+          "urls": [
+            "https://scikit-learn.org/stable/modules/linear_model.html",
+            "https://www.coursera.org/learn/machine-learning"
+          ]
+        },
+        {
+          "id": "feature-engineering-and-preprocessing",
+          "title": "Feature Engineering & Preprocessing",
+          "description": "Standardization, min-max scaling, target/one-hot encoding, handling missing data, outlier detection, and pipeline construction.",
+          "urls": [
+            "https://scikit-learn.org/stable/modules/preprocessing.html",
+            "https://scikit-learn.org/stable/modules/compose.html"
+          ]
+        },
+        {
+          "id": "cross-validation-and-tuning",
+          "title": "Model Validation & Hyperparameter Tuning",
+          "description": "Stratified K-Fold cross-validation, train-test splitting, Grid Search, Random Search, and Bayesian optimization.",
+          "urls": [
+            "https://scikit-learn.org/stable/modules/cross_validation.html",
+            "https://scikit-learn.org/stable/modules/grid_search.html"
+          ]
+        },
+        {
+          "id": "model-evaluation-metrics",
+          "title": "Model Evaluation Metrics",
+          "description": "Assessing performance using MSE/RMSE, MAE, R², Precision, Recall, F1-Score, ROC-AUC curves, and confusion matrices.",
+          "urls": [
+            "https://scikit-learn.org/stable/modules/model_evaluation.html",
+            "https://developers.google.com/machine-learning/crash-course/classification"
+          ]
+        },
+        {
+          "id": "decision-trees-and-ensembles",
+          "title": "Decision Trees & Ensemble Learning",
+          "description": "Tree mechanics (Gini/Entropy), Bagging (Random Forests), and Gradient Boosting algorithms (XGBoost, LightGBM, CatBoost).",
+          "urls": [
+            "https://scikit-learn.org/stable/modules/ensemble.html",
+            "https://xgboost.readthedocs.io/en/stable/"
+          ]
+        },
+        {
+          "id": "unsupervised-learning-and-dim-reduction",
+          "title": "Clustering & Dimensionality Reduction",
+          "description": "Unsupervised pattern discovery using K-Means, DBSCAN, Hierarchical Clustering, PCA, and t-SNE / UMAP embeddings.",
+          "urls": [
+            "https://scikit-learn.org/stable/modules/clustering.html",
+            "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+          ]
+        }
+      ]
+    }
+  ]
+}
