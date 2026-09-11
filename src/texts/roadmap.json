@@ -8,7 +8,7 @@
         {
           "id": "derivatives",
           "title": "Derivatives",
-          "description": "Fundamental concept of differential calculus representing rates of change, gradients, and optimization foundations.",
+          "description": "Fundamental concept of differential calculus representing rates of change, gradients, and optimization foundations. This topic is needed to understand how loss functions measure prediction error and how model parameters get updated during training.",
           "urls": [
             "https://www.khanacademy.org/math/differential-calculus",
             "https://www.3blue1brown.com/topics/calculus"
@@ -17,7 +17,7 @@
         {
           "id": "matrix-multiplication",
           "title": "Matrix Multiplication",
-          "description": "Core linear algebra operation used for transforming feature vectors, linear projections, and neural network layers.",
+          "description": "Core linear algebra operation used for transforming feature vectors, linear projections, and neural network layers. This topic is needed to compute dense neural network layer outputs (W * X + b) and process batched dataset matrices efficiently on GPUs.",
           "urls": [
             "https://www.khanacademy.org/math/linear-algebra",
             "https://www.3blue1brown.com/topics/linear-algebra"
@@ -26,7 +26,7 @@
         {
           "id": "vectors-and-spaces",
           "title": "Vectors & Vector Spaces",
-          "description": "Understanding vectors, dot products, vector norms (L1/L2), projections, and linear independence.",
+          "description": "Understanding vectors, dot products, vector norms (L1/L2), projections, and linear independence. This topic is needed to calculate similarity scores between text/image embeddings (cosine similarity) and apply L1/L2 regularization penalties to prevent model overfitting.",
           "urls": [
             "https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces",
             "https://www.3blue1brown.com/topics/linear-algebra"
@@ -35,7 +35,7 @@
         {
           "id": "eigenvalues-and-eigenvectors",
           "title": "Eigenvalues & Eigenvectors",
-          "description": "Spectral decomposition methods essential for understanding Principal Component Analysis (PCA) and dimensionality reduction.",
+          "description": "Spectral decomposition methods essential for understanding Principal Component Analysis (PCA) and dimensionality reduction. This topic is needed to compress high-dimensional feature spaces down to their primary variance axes without losing core information.",
           "urls": [
             "https://www.khanacademy.org/math/linear-algebra/alternate-bases",
             "https://www.3blue1brown.com/topics/linear-algebra"
@@ -44,7 +44,7 @@
         {
           "id": "partial-derivatives-and-gradients",
           "title": "Partial Derivatives & Gradients",
-          "description": "Multivariate calculus concepts required to understand gradient descent and loss function optimization.",
+          "description": "Multivariate calculus concepts required to understand gradient descent and loss function optimization. This topic is needed to compute backpropagation gradients across millions of weights simultaneously in deep neural networks.",
           "urls": [
             "https://www.khanacademy.org/math/multivariable-calculus",
             "https://www.3blue1brown.com/topics/calculus"
@@ -53,7 +53,7 @@
         {
           "id": "probability-basics-and-bayes",
           "title": "Probability Fundamentals & Bayes' Theorem",
-          "description": "Conditional probability, independence, joint distributions, and Bayesian inference core to machine learning models.",
+          "description": "Conditional probability, independence, joint distributions, and Bayesian inference core to machine learning models. This topic is needed to calculate confidence probabilities for classifications, run Naive Bayes baselines, and understand probabilistic modeling.",
           "urls": [
             "https://www.khanacademy.org/math/statistics-probability/probability-library",
             "https://www.statquest.org/"
@@ -62,7 +62,7 @@
         {
           "id": "descriptive-and-inferential-stats",
           "title": "Descriptive & Inferential Statistics",
-          "description": "Mean, variance, standard deviation, distributions (Gaussian), hypothesis testing, p-values, and confidence intervals.",
+          "description": "Mean, variance, standard deviation, distributions (Gaussian), hypothesis testing, p-values, and confidence intervals. This topic is needed to standardize feature scales (z-score normalization), evaluate model significance, and spot data leakage during EDA.",
           "urls": [
             "https://www.khanacademy.org/math/statistics-probability",
             "https://www.statquest.org/"
@@ -206,6 +206,106 @@
           "urls": [
             "https://scikit-learn.org/stable/modules/clustering.html",
             "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level-4",
+      "level": "Level 4: Deep Learning Foundations",
+      "description": "Understand core neural network mechanics, optimization techniques, training dynamics, and PyTorch fundamentals.",
+      "topics": [
+        {
+          "id": "neural-network-basics",
+          "title": "Perceptrons & Neural Networks",
+          "description": "Multilayer Perceptrons (MLP), forward propagation, activation functions (ReLU, Sigmoid, GELU), loss functions, and backpropagation mechanics.",
+          "urls": [
+            "https://www.3blue1brown.com/topics/neural-networks",
+            "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"
+          ]
+        },
+        {
+          "id": "optimization-and-regularization",
+          "title": "Optimization & Regularization Techniques",
+          "description": "Stochastic Gradient Descent (SGD), Adam, AdamW, learning rate schedulers, Dropout, Batch/Layer Normalization, and weight decay.",
+          "urls": [
+            "https://pytorch.org/docs/stable/optim.html",
+            "https://cs231n.github.io/neural-networks-2/"
+          ]
+        },
+        {
+          "id": "pytorch-framework",
+          "title": "PyTorch Framework & Tensors",
+          "description": "Tensor operations, autograd computation graphs, building custom modules with `nn.Module`, DataLoaders, and GPU acceleration.",
+          "urls": [
+            "https://pytorch.org/tutorials/beginner/basics/intro.html",
+            "https://pythonprogramming.net/introduction-deep-learning-python-pytorch/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "level-5",
+      "level": "Level 5: Advanced Deep Learning & Domains",
+      "description": "Master specialized deep learning architectures across Computer Vision, Natural Language Processing, and modern generative AI.",
+      "topics": [
+        {
+          "id": "computer-vision",
+          "title": "Computer Vision (CV)",
+          "description": "Convolutional Neural Networks (CNNs), object detection (YOLO), semantic segmentation, Vision Transformers (ViT), and feature backbones (DINOv2).",
+          "urls": [
+            "https://cs231n.github.io/",
+            "https://pytorch.org/vision/stable/index.html"
+          ]
+        },
+        {
+          "id": "natural-language-processing",
+          "title": "Natural Language Processing (NLP)",
+          "description": "Text tokenization, embeddings (Word2Vec, SentenceTransformers), RNNs/LSTMs, Self-Attention mechanisms, and Transformer architectures (BERT, GPT).",
+          "urls": [
+            "https://cs224d.stanford.edu/",
+            "https://huggingface.co/docs/transformers/index"
+          ]
+        },
+        {
+          "id": "generative-ai-and-llms",
+          "title": "Generative AI & LLM Systems",
+          "description": "Large Language Model fine-tuning (LoRA/QLoRA), Retrieval-Augmented Generation (RAG), vector databases, and agentic workflows.",
+          "urls": [
+            "https://huggingface.co/docs/peft/index",
+            "https://docs.langchain.com/docs/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "useful-resources",
+      "level": "Useful resources",
+      "description": "Curated selection of essential textbooks, interactive handbooks, and foundational course specializations for Machine Learning and Deep Learning.",
+      "topics": [
+        {
+          "id": "yandex-ml-handbook",
+          "title": "Yandex Machine Learning Handbook",
+          "description": "Comprehensive, interactive online textbook covering mathematics, classical machine learning algorithms, and optimization theories.",
+          "urls": [
+            "https://education.yandex.ru/handbook/ml"
+          ]
+        },
+        {
+          "id": "hands-on-ml-geron",
+          "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (Aurélien Géron)",
+          "description": "Practical code-first textbook guiding you from Scikit-Learn pipelines to advanced deep learning architectures.",
+          "urls": [
+            "https://github.com/ageron/handson-ml3"
+          ]
+        },
+        {
+          "id": "andrew-ng-coursera",
+          "title": "Andrew Ng Coursera Specializations",
+          "description": "Industry-standard Machine Learning and Deep Learning Specializations on Coursera taught by Andrew Ng.",
+          "urls": [
+            "https://www.coursera.org/specializations/machine-learning-introduction",
+            "https://www.coursera.org/specializations/deep-learning"
           ]
         }
       ]

@@ -9,7 +9,7 @@ export function Head() {
       </div>
 
       <h1 className="text-3xl font-extrabold text-white tracking-tight">
-        DataSci 101 Roadmap
+        DataSci
       </h1>
     </div>
   );
