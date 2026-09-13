@@ -3,148 +3,173 @@
     {
       "id": "level-1",
       "level": "Level 1: Math",
-      "description": "Before you dive into Data Science you need to know the basics of Linear Algebra, Calculus, Probability, and Statistics.",
+      "description": "Before you dive into Data Science you need to know the basics of Linear Algebra, Calculus, Probability, and Statistics. There are thousands of videos on YouTube explaining these topics. The most popular one is Organic Chemistry tutor. He provides very clear explanations and uses good examples.",
       "topics": [
         {
           "id": "derivatives",
           "title": "Derivatives",
           "description": "Fundamental concept of differential calculus representing rates of change, gradients, and optimization foundations. This topic is needed to understand how loss functions measure prediction error and how model parameters get updated during training.",
+          "author": [
+            "Organic Chemistry Tutor",
+            "Khan Academy"
+          ],
           "urls": [
-            "https://www.khanacademy.org/math/differential-calculus",
-            "https://www.3blue1brown.com/topics/calculus"
+            "https://www.youtube.com/watch?v=5yfh5cf4-0w",
+            "https://www.youtube.com/watch?v=N2PpRnFqnqY"
           ]
         },
         {
           "id": "matrix-multiplication",
           "title": "Matrix Multiplication",
           "description": "Core linear algebra operation used for transforming feature vectors, linear projections, and neural network layers. This topic is needed to compute dense neural network layer outputs (W * X + b) and process batched dataset matrices efficiently on GPUs.",
+          "author": [
+            "Organic Chemistry Tutor",
+            "Organic Chemistry Tutor"
+          ],
           "urls": [
-            "https://www.khanacademy.org/math/linear-algebra",
-            "https://www.3blue1brown.com/topics/linear-algebra"
+            "https://www.youtube.com/watch?v=vzt9c7iWPxs",
+            "https://www.youtube.com/watch?v=2spTnAiQg4M"
           ]
         },
         {
           "id": "vectors-and-spaces",
           "title": "Vectors & Vector Spaces",
           "description": "Understanding vectors, dot products, vector norms (L1/L2), projections, and linear independence. This topic is needed to calculate similarity scores between text/image embeddings (cosine similarity) and apply L1/L2 regularization penalties to prevent model overfitting.",
+          "author": [
+            "Dot Products, Organic Chemistry Tutor",
+            "L1, L2 norms",
+            "Projections, Organic Chemistry Tutor",
+            "Linear independence, Professor Dave Explains"
+          ],
           "urls": [
-            "https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces",
-            "https://www.3blue1brown.com/topics/linear-algebra"
+            "https://www.youtube.com/watch?v=VzX8KJKFhlM",
+            "https://www.youtube.com/watch?v=5fN2J8wYnfw&t=1s",
+            "https://www.youtube.com/watch?v=Rw70zkvqEiE",
+            "https://www.youtube.com/watch?v=9kDpbZCK62Y"
           ]
         },
         {
           "id": "eigenvalues-and-eigenvectors",
           "title": "Eigenvalues & Eigenvectors",
           "description": "Spectral decomposition methods essential for understanding Principal Component Analysis (PCA) and dimensionality reduction. This topic is needed to compress high-dimensional feature spaces down to their primary variance axes without losing core information.",
+          "author": [
+            "Professor Dave Explains",
+            "3Blue1Brown"
+          ],
           "urls": [
-            "https://www.khanacademy.org/math/linear-algebra/alternate-bases",
-            "https://www.3blue1brown.com/topics/linear-algebra"
+            "https://www.youtube.com/watch?v=TQvxWaQnrqI&t=853s",
+            "https://www.youtube.com/watch?v=PFDu9oVAE-g"
           ]
         },
         {
           "id": "partial-derivatives-and-gradients",
           "title": "Partial Derivatives & Gradients",
           "description": "Multivariate calculus concepts required to understand gradient descent and loss function optimization. This topic is needed to compute backpropagation gradients across millions of weights simultaneously in deep neural networks.",
+          "author": [
+            "Organic Chemistry Tutor",
+            "Organic Chemistry Tutor"
+          ],
           "urls": [
-            "https://www.khanacademy.org/math/multivariable-calculus",
-            "https://www.3blue1brown.com/topics/calculus"
+            "https://www.youtube.com/watch?v=JAf_aSIJryg",
+            "https://www.youtube.com/watch?v=CnVes9TdnPo"
           ]
         },
         {
           "id": "probability-basics-and-bayes",
           "title": "Probability Fundamentals & Bayes' Theorem",
           "description": "Conditional probability, independence, joint distributions, and Bayesian inference core to machine learning models. This topic is needed to calculate confidence probabilities for classifications, run Naive Bayes baselines, and understand probabilistic modeling.",
+          "author": [
+            "Conditional Probability, Organic Chemistry Tutor",
+            "Independent event, Organic Chemistry Tutor",
+            "Bayes Theorem, Organic Chemistry Tutor"
+          ],
           "urls": [
-            "https://www.khanacademy.org/math/statistics-probability/probability-library",
-            "https://www.statquest.org/"
+            "https://www.youtube.com/watch?v=sqDVrXq_eh0",
+            "https://www.youtube.com/watch?v=94AmzeR9n2w",
+            "https://www.youtube.com/watch?v=OByl4RJxnKA"
           ]
         },
         {
           "id": "descriptive-and-inferential-stats",
           "title": "Descriptive & Inferential Statistics",
           "description": "Mean, variance, standard deviation, distributions (Gaussian), hypothesis testing, p-values, and confidence intervals. This topic is needed to standardize feature scales (z-score normalization), evaluate model significance, and spot data leakage during EDA.",
+          "author": [
+            "Mean, variance, and standard deviation, Organic Chemistry Tutor",
+            "Normal(Gaussian) distribution, Organic Chemistry Tutor",
+            "Hypothesis testing, Organic Chemistry Tutor",
+            "p-values, Organic Chemistry Tutor",
+            "Confidence intervals, Organic Chemistry Tutor"
+          ],
           "urls": [
-            "https://www.khanacademy.org/math/statistics-probability",
-            "https://www.statquest.org/"
+            "https://www.youtube.com/watch?v=Uk98hiMQgN0",
+            "https://www.youtube.com/watch?v=gHBL5Zau3NE",
+            "https://www.youtube.com/watch?v=zJ8e_wAWUzE",
+            "https://www.youtube.com/watch?v=8Aw45HN5lnA",
+            "https://www.youtube.com/watch?v=DT-fPG0Hff8"
           ]
         }
       ]
     },
     {
       "id": "level-2",
-      "level": "Level 2: Python & Data Science Tooling",
-      "description": "Master core Python fundamentals alongside essential libraries like NumPy and Pandas for data manipulation and analysis.",
+      "level": "Level 2: Python",
+      "description": "Python's official documentation is the best source for learning the basics of this language. If you are into video tutorials, then watch this video.",
       "topics": [
         {
-          "id": "data-types",
-          "title": "Data Types & Structures",
-          "description": "Core primitives and built-in data structures including lists, dictionaries, tuples, sets, and string manipulation.",
+          "id": "core-syntax-and-fundamentals",
+          "title": "Core Syntax & Fundamentals",
+          "description": "Data types (integers, floats, strings, booleans), variables, type casting, basic operators, and string manipulation.",
+          "author": [
+            "Python Docs"
+          ],
           "urls": [
-            "https://docs.python.org/3/tutorial/datastructures.html",
-            "https://realpython.com/python-data-types/"
+            "https://docs.python.org/3/tutorial/introduction.html"
           ]
         },
         {
-          "id": "loops",
-          "title": "Control Flow & Iteration",
-          "description": "Iterative control flow using `for` and `while` loops, list/dict comprehensions, and generator expressions.",
+          "id": "control-flow",
+          "title": "Control Flow",
+          "description": "if/elif/else conditional statements, for loops, while loops, and list comprehensions for concise data processing.",
+          "author": [
+            "Python Docs"
+          ],
           "urls": [
-            "https://realpython.com/python-for-loop/",
-            "https://docs.python.org/3/tutorial/controlflow.html#for-statements"
+            "https://docs.python.org/3/tutorial/controlflow.html"
           ]
         },
         {
-          "id": "conditions",
-          "title": "Conditions & Logic",
-          "description": "Conditional branching logic using `if`, `elif`, `else` statements, ternary operators, and logical boolean operations.",
+          "id": "data-structures",
+          "title": "Data Structures",
+          "description": "Lists, tuples, sets, and dictionaries (focusing heavily on dictionary operations and list transformations).",
+          "author": [
+            "Python Docs"
+          ],
           "urls": [
-            "https://realpython.com/python-conditional-statements/",
-            "https://docs.python.org/3/tutorial/controlflow.html#if-statements"
+            "https://docs.python.org/3/tutorial/datastructures.html"
           ]
         },
         {
-          "id": "functions",
-          "title": "Functions & Scope",
-          "description": "Modular code reuse using functions, `*args`/`**kwargs`, lambda functions, closures, variable scope, and type hints.",
+          "id": "functions-and-modular-code",
+          "title": "Functions & Modular Code",
+          "description": "Defining functions with def, arguments/keyword arguments, return values, lambda functions, and importing standard modules.",
+          "author": [
+            "Python Docs"
+          ],
           "urls": [
-            "https://realpython.com/defining-your-own-python-function/",
             "https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
           ]
         },
         {
-          "id": "oop",
-          "title": "Object-Oriented Programming (OOP)",
-          "description": "Classes, objects, inheritance, encapsulation, polymorphism, and dunder magic methods (`__init__`, `__repr__`).",
+          "id": "file-io-and-error-handling",
+          "title": "File I/O & Error Handling",
+          "description": "Reading/writing files (.txt, .csv, .json), try/except blocks, and managing exceptions during data loading.",
+          "author": [
+            "Python Docs",
+            "Python Docs"
+          ],
           "urls": [
-            "https://realpython.com/python3-object-oriented-programming/",
-            "https://docs.python.org/3/tutorial/classes.html"
-          ]
-        },
-        {
-          "id": "file-io-and-virtual-envs",
-          "title": "Environments & Modules",
-          "description": "Virtual environments (`venv`, `conda`), package management via `pip`, file I/O (JSON/CSV), and module imports.",
-          "urls": [
-            "https://realpython.com/python-virtual-environments-a-primer/",
-            "https://docs.python.org/3/tutorial/modules.html"
-          ]
-        },
-        {
-          "id": "numpy-fundamentals",
-          "title": "NumPy Numerical Computing",
-          "description": "N-dimensional arrays (`ndarray`), vectorized math operations, array slicing, reshaping, and broadcasting mechanisms.",
-          "urls": [
-            "https://numpy.org/doc/stable/user/absolute_beginners.html",
-            "https://realpython.com/numpy-tutorial/"
-          ]
-        },
-        {
-          "id": "pandas-data-wrangling",
-          "title": "Pandas Data Manipulation",
-          "description": "DataFrames, Series, indexing (`loc`/`iloc`), filtering, handling missing values, `groupby` aggregations, and merging.",
-          "urls": [
-            "https://pandas.pydata.org/docs/user_guide/10min.html",
-            "https://realpython.com/pandas-dataframe/"
+            "https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files",
+            "https://docs.python.org/3/tutorial/errors.html"
           ]
         }
       ]
@@ -152,60 +177,39 @@
     {
       "id": "level-3",
       "level": "Level 3: Classic Machine Learning",
-      "description": "Master foundational supervised and unsupervised algorithms, validation strategies, feature preprocessing, and model evaluation metrics.",
+      "description": "These two sources below are enough for building a solid foundation in Classic Machine Learning. After completing them you can dive into the Deep Learning.",
       "topics": [
         {
-          "id": "linear-and-logistic-regression",
-          "title": "Linear & Regularized Models",
-          "description": "Predicting continuous and categorical targets using OLS, Logistic Regression, Ridge (L2), Lasso (L1), and ElasticNet regularization.",
+          "id": "andrew-ng-ml-specialization",
+          "title": "Machine Learning Specialization",
+          "description": "Andrew Ng's \"Machine Learning Specialization\" course is the best starting point for learning classic ML. It is ideal for complete beginners because Andrew Ng explains most topics without advanced math, helping you build intuition for supervised and unsupervised learning algorithms. (Note: Coursera does not provide 100% financial aid anymore, but you can still audit the course for free without receiving a certificate.).",
+          "author": [
+            "Andrew Ng"
+          ],
           "urls": [
-            "https://scikit-learn.org/stable/modules/linear_model.html",
-            "https://www.coursera.org/learn/machine-learning"
+            "https://www.coursera.org/specializations/machine-learning-introduction"
           ]
         },
         {
-          "id": "feature-engineering-and-preprocessing",
-          "title": "Feature Engineering & Preprocessing",
-          "description": "Standardization, min-max scaling, target/one-hot encoding, handling missing data, outlier detection, and pipeline construction.",
+          "id": "hands-on-ml-book",
+          "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+          "description": "After completing the Coursera course, you can read \"Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow\" by Aurélien Géron, which is considered an all-time classic among machine learning books. It provides the essential theory and math behind algorithms alongside hands-on practice with Scikit-Learn. For classic ML, you can focus on the first eight chapters. These two sources are enough for the theoretical part of the Classic Machine Learning and after completion you can dive into Deep Learning.",
+          "author": [
+            "Aurélien Géron"
+          ],
           "urls": [
-            "https://scikit-learn.org/stable/modules/preprocessing.html",
-            "https://scikit-learn.org/stable/modules/compose.html"
+            "https://www.amazon.com/s?k=hands-on+machine+learning"
           ]
         },
         {
-          "id": "cross-validation-and-tuning",
-          "title": "Model Validation & Hyperparameter Tuning",
-          "description": "Stratified K-Fold cross-validation, train-test splitting, Grid Search, Random Search, and Bayesian optimization.",
+          "id": "kaggle-personal-projects",
+          "title": "Kaggle",
+          "description": "Creating personal projects is the best way to master the topics, Kaggle is the best source for finding the datasets for your projects.",
+          "author": [
+            "Kaggle"
+          ],
           "urls": [
-            "https://scikit-learn.org/stable/modules/cross_validation.html",
-            "https://scikit-learn.org/stable/modules/grid_search.html"
-          ]
-        },
-        {
-          "id": "model-evaluation-metrics",
-          "title": "Model Evaluation Metrics",
-          "description": "Assessing performance using MSE/RMSE, MAE, R², Precision, Recall, F1-Score, ROC-AUC curves, and confusion matrices.",
-          "urls": [
-            "https://scikit-learn.org/stable/modules/model_evaluation.html",
-            "https://developers.google.com/machine-learning/crash-course/classification"
-          ]
-        },
-        {
-          "id": "decision-trees-and-ensembles",
-          "title": "Decision Trees & Ensemble Learning",
-          "description": "Tree mechanics (Gini/Entropy), Bagging (Random Forests), and Gradient Boosting algorithms (XGBoost, LightGBM, CatBoost).",
-          "urls": [
-            "https://scikit-learn.org/stable/modules/ensemble.html",
-            "https://xgboost.readthedocs.io/en/stable/"
-          ]
-        },
-        {
-          "id": "unsupervised-learning-and-dim-reduction",
-          "title": "Clustering & Dimensionality Reduction",
-          "description": "Unsupervised pattern discovery using K-Means, DBSCAN, Hierarchical Clustering, PCA, and t-SNE / UMAP embeddings.",
-          "urls": [
-            "https://scikit-learn.org/stable/modules/clustering.html",
-            "https://scikit-learn.org/stable/modules/decomposition.html#pca"
+            "https://www.kaggle.com/datasets"
           ]
         }
       ]
@@ -213,33 +217,17 @@
     {
       "id": "level-4",
       "level": "Level 4: Deep Learning Foundations",
-      "description": "Understand core neural network mechanics, optimization techniques, training dynamics, and PyTorch fundamentals.",
+      "description": "After mastering Classic Machine Learning, you can start reading Deep Learning with PyTorch (by Eli Stevens, Luca Antiga, and Thomas Viehmann). It is widely considered one of the best code-first introductions to both neural networks and PyTorch mechanics.",
       "topics": [
         {
-          "id": "neural-network-basics",
-          "title": "Perceptrons & Neural Networks",
-          "description": "Multilayer Perceptrons (MLP), forward propagation, activation functions (ReLU, Sigmoid, GELU), loss functions, and backpropagation mechanics.",
+          "id": "deep-learning-with-pytorch-book",
+          "title": "Deep Learning with PyTorch",
+          "description": "Part 1 (Core PyTorch) contains everything you need to master PyTorch fundamentals and core deep learning mechanics.",
+          "author": [
+            "E.Stevens, L.Antiga, T.Viehmann"
+          ],
           "urls": [
-            "https://www.3blue1brown.com/topics/neural-networks",
-            "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"
-          ]
-        },
-        {
-          "id": "optimization-and-regularization",
-          "title": "Optimization & Regularization Techniques",
-          "description": "Stochastic Gradient Descent (SGD), Adam, AdamW, learning rate schedulers, Dropout, Batch/Layer Normalization, and weight decay.",
-          "urls": [
-            "https://pytorch.org/docs/stable/optim.html",
-            "https://cs231n.github.io/neural-networks-2/"
-          ]
-        },
-        {
-          "id": "pytorch-framework",
-          "title": "PyTorch Framework & Tensors",
-          "description": "Tensor operations, autograd computation graphs, building custom modules with `nn.Module`, DataLoaders, and GPU acceleration.",
-          "urls": [
-            "https://pytorch.org/tutorials/beginner/basics/intro.html",
-            "https://pythonprogramming.net/introduction-deep-learning-python-pytorch/"
+            "https://www.amazon.com/dp/1617295264?lv=shuf&channelId=425&plpRedirect=mhFallback"
           ]
         }
       ]
@@ -253,6 +241,10 @@
           "id": "computer-vision",
           "title": "Computer Vision (CV)",
           "description": "Convolutional Neural Networks (CNNs), object detection (YOLO), semantic segmentation, Vision Transformers (ViT), and feature backbones (DINOv2).",
+          "author": [
+            "CS231n",
+            "PyTorch Docs"
+          ],
           "urls": [
             "https://cs231n.github.io/",
             "https://pytorch.org/vision/stable/index.html"
@@ -262,6 +254,10 @@
           "id": "natural-language-processing",
           "title": "Natural Language Processing (NLP)",
           "description": "Text tokenization, embeddings (Word2Vec, SentenceTransformers), RNNs/LSTMs, Self-Attention mechanisms, and Transformer architectures (BERT, GPT).",
+          "author": [
+            "Stanford CS224d",
+            "Hugging Face Docs"
+          ],
           "urls": [
             "https://cs224d.stanford.edu/",
             "https://huggingface.co/docs/transformers/index"
@@ -271,6 +267,10 @@
           "id": "generative-ai-and-llms",
           "title": "Generative AI & LLM Systems",
           "description": "Large Language Model fine-tuning (LoRA/QLoRA), Retrieval-Augmented Generation (RAG), vector databases, and agentic workflows.",
+          "author": [
+            "Hugging Face PEFT Docs",
+            "LangChain Docs"
+          ],
           "urls": [
             "https://huggingface.co/docs/peft/index",
             "https://docs.langchain.com/docs/"
@@ -287,14 +287,20 @@
           "id": "yandex-ml-handbook",
           "title": "Yandex Machine Learning Handbook",
           "description": "Comprehensive, interactive online textbook covering mathematics, classical machine learning algorithms, and optimization theories.",
+          "author": [
+            "Yandex"
+          ],
           "urls": [
             "https://education.yandex.ru/handbook/ml"
           ]
         },
         {
           "id": "hands-on-ml-geron",
-          "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow (Aurélien Géron)",
+          "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
           "description": "Practical code-first textbook guiding you from Scikit-Learn pipelines to advanced deep learning architectures.",
+          "author": [
+            "Aurélien Géron"
+          ],
           "urls": [
             "https://github.com/ageron/handson-ml3"
           ]
@@ -303,6 +309,9 @@
           "id": "andrew-ng-coursera",
           "title": "Andrew Ng Coursera Specializations",
           "description": "Industry-standard Machine Learning and Deep Learning Specializations on Coursera taught by Andrew Ng.",
+          "author": [
+            "Andrew Ng"
+          ],
           "urls": [
             "https://www.coursera.org/specializations/machine-learning-introduction",
             "https://www.coursera.org/specializations/deep-learning"

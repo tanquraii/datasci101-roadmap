@@ -3,6 +3,7 @@ import { Topic } from "./components/Topic";
 import roadmapData from './texts/roadmap.json';
 import { Head } from "./components/Head";
 import { Description } from "./components/Description";
+
 export default function App() {
   return (
     <div className="bg-[#1E1E1E]">
@@ -24,6 +25,7 @@ export default function App() {
                   key={topic.id}
                   title={topic.title}
                   description={topic.description}
+                  author={'author' in topic ? topic.author : []}
                   urls={topic.urls}
                 />
               ))}

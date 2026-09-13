@@ -9,5 +9,6 @@ export interface Accordiontype {
 export interface Topictype {
     title: string;
     description: string;
+    author?: string[];
     urls: string[];
 }
