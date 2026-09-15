@@ -3,7 +3,7 @@
     {
       "id": "level-1",
       "level": "Level 1: Math",
-      "description": "Before you dive into Data Science you need to know the basics of Linear Algebra, Calculus, Probability, and Statistics. There are thousands of videos on YouTube explaining these topics. The most popular one is Organic Chemistry tutor. He provides very clear explanations and uses good examples.",
+      "description": "Before you dive into Data Science you need to know the basics of Linear Algebra, Calculus, Probability, and Statistics. Do not get stuck trying to memorize every topic here, use this section as a reference point and return to it whenever a new topic uses math you do not know.",
       "topics": [
         {
           "id": "derivatives",
@@ -177,7 +177,7 @@
     {
       "id": "level-3",
       "level": "Level 3: Classic Machine Learning",
-      "description": "These two sources below are enough for building a solid foundation in Classic Machine Learning. After completing them you can dive into the Deep Learning.",
+      "description": "These two sources below are enough for building a solid foundation in Classic Machine Learning. After completing them you can dive into the Deep Learning. In case you struggle finding a book in the internet or have troubles with coursera, below are the links to the videos with the explanations of Classic ML topics.",
       "topics": [
         {
           "id": "andrew-ng-ml-specialization",
@@ -193,12 +193,79 @@
         {
           "id": "hands-on-ml-book",
           "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
-          "description": "After completing the Coursera course, you can read \"Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow\" by Aurélien Géron, which is considered an all-time classic among machine learning books. It provides the essential theory and math behind algorithms alongside hands-on practice with Scikit-Learn. For classic ML, you can focus on the first eight chapters. These two sources are enough for the theoretical part of the Classic Machine Learning and after completion you can dive into Deep Learning.",
+          "description": "After completing the Coursera course, you can read \"Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow\" by Aurélien Géron, which is considered an all-time classic among machine learning books. It provides the essential theory and math behind algorithms alongside hands-on practice with Scikit-Learn. For classic ML, you can focus on the first eight chapters.",
           "author": [
             "Aurélien Géron"
           ],
           "urls": [
-            "https://www.amazon.com/s?k=hands-on+machine+learning"
+            "https://www.amazon.com/dp/1491962291?lv=shuf&channelId=500&plpRedirect=mhFallback"
+          ]
+        },
+        {
+          "id": "classification",
+          "title": "Classification",
+          "description": "Binary (Logistic Regression), Multiclass Classification, and evaluation metrics including Precision, Recall, F1 score, ROC Curve, and Confusion matrix. Kaggle datasets to practice: MNIST, Titanic, Churn Prediction.",
+          "author": [
+            "Binary & Metrics",
+            "Multiclass"
+          ],
+          "urls": [
+            "https://www.youtube.com/watch?v=oT2KFUxlclA",
+            "https://www.youtube.com/watch?v=Jeh531fPhj8"
+          ]
+        },
+        {
+          "id": "regression",
+          "title": "Regression",
+          "description": "Linear Regression (Cost function, formula), Gradient Descent optimization (Stochastic, Batch, Mini-batch), and Polynomial Regression. Kaggle dataset to train on: Price prediction.",
+          "author": [
+            "Linear Regression",
+            "Gradient Descent",
+            "Polynomial Regression"
+          ],
+          "urls": [
+            "https://www.youtube.com/watch?v=3dhcmeOTZ_Q&t=35s",
+            "https://www.youtube.com/watch?v=IHZwWFHWa-w",
+            "https://www.youtube.com/watch?v=Qnt2vBRW8Io"
+          ]
+        },
+        {
+          "id": "decision-trees",
+          "title": "Decision Trees",
+          "description": "Tree-based algorithms and recursive splitting mechanics. Kaggle datasets to practice: MNIST, Titanic, Churn Prediction, Price prediction.",
+          "author": [
+            "Decision Trees"
+          ],
+          "urls": [
+            "https://www.youtube.com/watch?v=LLBGiAAZqAM"
+          ]
+        },
+        {
+          "id": "ensemble-learning-and-random-forest",
+          "title": "Ensemble Learning, Random Forests & Gradient Boosting",
+          "description": "Combining multiple weak learners using Ensemble techniques, Random Forests, and Gradient Boosting methods.",
+          "author": [
+            "Ensemble & Random Forests",
+            "Gradient Boosting"
+          ],
+          "urls": [
+            "https://www.youtube.com/watch?v=gkXX4h3qYm4",
+            "https://www.youtube.com/watch?v=en2bmeB4QUo"
+          ]
+        },
+        {
+          "id": "unsupervised-learning-techniques",
+          "title": "Unsupervised Learning Techniques",
+          "description": "Finding hidden patterns in unlabeled data using Clustering, Dimensionality Reduction, and Anomaly Detection.",
+          "author": [
+            "Clustering",
+            "Dimensionality Reduction",
+            "Anomaly Detection"
+          ],
+          "urls": [
+            "https://www.youtube.com/watch?v=0D4LnsJr85Y",
+            "https://www.youtube.com/watch?v=6XGlqR6rcpU",
+            "https://www.youtube.com/watch?v=UqqPm-Q4aMo"
           ]
         },
         {
@@ -217,17 +284,30 @@
     {
       "id": "level-4",
       "level": "Level 4: Deep Learning Foundations",
-      "description": "After mastering Classic Machine Learning, you can start reading Deep Learning with PyTorch (by Eli Stevens, Luca Antiga, and Thomas Viehmann). It is widely considered one of the best code-first introductions to both neural networks and PyTorch mechanics.",
+      "description": "After mastering the Classic ML, you can dive into Deep Learning foundations.",
       "topics": [
+        {
+          "id": "pytorch-tutorials",
+          "title": "PyTorch Tutorials & Basics",
+          "description": "Before you start, it is recommended to check out these tutorials on PyTorch. It is the most popular tool in deep learning nowadays. You do not have to read both docs and watch the entire playlist, just choose what is the most comfortable for you.",
+          "author": [
+            "PyTorch Official Docs",
+            "YouTube Playlist"
+          ],
+          "urls": [
+            "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
+            "https://www.youtube.com/playlist?list=PL_lsbAsL_o2CTlGHgMxNrKhzP97BaG9ZN"
+          ]
+        },
         {
           "id": "deep-learning-with-pytorch-book",
           "title": "Deep Learning with PyTorch",
-          "description": "Part 1 (Core PyTorch) contains everything you need to master PyTorch fundamentals and core deep learning mechanics.",
+          "description": "After studying the basics of PyTorch, you can start reading Deep Learning with PyTorch (by Eli Stevens, Luca Antiga, and Thomas Viehmann). It is widely considered one of the best code-first introductions to both neural networks and PyTorch mechanics. Part 1 (Core PyTorch) contains everything you need to master core deep learning mechanics.",
           "author": [
             "E.Stevens, L.Antiga, T.Viehmann"
           ],
           "urls": [
-            "https://www.amazon.com/dp/1617295264?lv=shuf&channelId=425&plpRedirect=mhFallback"
+            "https://www.amazon.com/dp/1617295264?lv=shuf&channelId=500&plpRedirect=mhFallback"
           ]
         }
       ]
@@ -281,7 +361,7 @@
     {
       "id": "useful-resources",
       "level": "Useful resources",
-      "description": "Curated selection of essential textbooks, interactive handbooks, and foundational course specializations for Machine Learning and Deep Learning.",
+      "description": "If you are interested in deepening your knowledge, then check out these resources.",
       "topics": [
         {
           "id": "yandex-ml-handbook",
@@ -295,26 +375,25 @@
           ]
         },
         {
-          "id": "hands-on-ml-geron",
-          "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
-          "description": "Practical code-first textbook guiding you from Scikit-Learn pipelines to advanced deep learning architectures.",
+          "id": "andrej-karpathy-nn-zero-to-hero",
+          "title": "Neural Networks: Zero to Hero by Andrej Karpathy",
+          "description": "A comprehensive video course covering deep learning and neural network fundamentals built from scratch in Python and PyTorch.",
           "author": [
-            "Aurélien Géron"
+            "Andrej Karpathy"
           ],
           "urls": [
-            "https://github.com/ageron/handson-ml3"
+            "https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ"
           ]
         },
         {
-          "id": "andrew-ng-coursera",
-          "title": "Andrew Ng Coursera Specializations",
-          "description": "Industry-standard Machine Learning and Deep Learning Specializations on Coursera taught by Andrew Ng.",
+          "id": "coderun-yandex-ml-problems",
+          "title": "Yandex CodeRun ML Problem Set",
+          "description": "Interactive platform featuring algorithmic and machine learning problems to practice practical coding and problem-solving skills.",
           "author": [
-            "Andrew Ng"
+            "Yandex"
           ],
           "urls": [
-            "https://www.coursera.org/specializations/machine-learning-introduction",
-            "https://www.coursera.org/specializations/deep-learning"
+            "https://coderun.yandex.ru/catalog"
           ]
         }
       ]
