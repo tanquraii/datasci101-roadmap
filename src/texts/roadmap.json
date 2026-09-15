@@ -118,7 +118,7 @@
         {
           "id": "core-syntax-and-fundamentals",
           "title": "Core Syntax & Fundamentals",
-          "description": "Data types (integers, floats, strings, booleans), variables, type casting, basic operators, and string manipulation.",
+          "description": "",
           "author": [
             "Python Docs"
           ],
@@ -129,7 +129,7 @@
         {
           "id": "control-flow",
           "title": "Control Flow",
-          "description": "if/elif/else conditional statements, for loops, while loops, and list comprehensions for concise data processing.",
+          "description": "",
           "author": [
             "Python Docs"
           ],
@@ -140,7 +140,7 @@
         {
           "id": "data-structures",
           "title": "Data Structures",
-          "description": "Lists, tuples, sets, and dictionaries (focusing heavily on dictionary operations and list transformations).",
+          "description": "",
           "author": [
             "Python Docs"
           ],
@@ -151,7 +151,7 @@
         {
           "id": "functions-and-modular-code",
           "title": "Functions & Modular Code",
-          "description": "Defining functions with def, arguments/keyword arguments, return values, lambda functions, and importing standard modules.",
+          "description": "",
           "author": [
             "Python Docs"
           ],
@@ -162,7 +162,7 @@
         {
           "id": "file-io-and-error-handling",
           "title": "File I/O & Error Handling",
-          "description": "Reading/writing files (.txt, .csv, .json), try/except blocks, and managing exceptions during data loading.",
+          "description": "",
           "author": [
             "Python Docs",
             "Python Docs"
@@ -204,7 +204,7 @@
         {
           "id": "classification",
           "title": "Classification",
-          "description": "Binary (Logistic Regression), Multiclass Classification, and evaluation metrics including Precision, Recall, F1 score, ROC Curve, and Confusion matrix. Kaggle datasets to practice: MNIST, Titanic, Churn Prediction.",
+          "description": "Binary and Multiclass Classification, and its evaluation metrics. Kaggle datasets to practice: MNIST, Titanic, Churn Prediction.",
           "author": [
             "Binary & Metrics",
             "Multiclass"
@@ -217,7 +217,7 @@
         {
           "id": "regression",
           "title": "Regression",
-          "description": "Linear Regression (Cost function, formula), Gradient Descent optimization (Stochastic, Batch, Mini-batch), and Polynomial Regression. Kaggle dataset to train on: Price prediction.",
+          "description": "Linear Regression, Gradient Descent, and Polynomial Regression. Kaggle dataset to train on: Price prediction.",
           "author": [
             "Linear Regression",
             "Gradient Descent",
