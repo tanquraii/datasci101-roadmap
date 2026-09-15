@@ -113,7 +113,7 @@
     {
       "id": "level-2",
       "level": "Level 2: Python",
-      "description": "Python's official documentation is the best source for learning the basics of this language. If you are into video tutorials, then watch this video.",
+      "description": "Python's official documentation is the best source for learning the basics of this language.",
       "topics": [
         {
           "id": "core-syntax-and-fundamentals",
