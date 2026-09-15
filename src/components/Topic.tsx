@@ -4,19 +4,22 @@ import { useState } from "react";
 export function Topic({ title, description, author, urls }: Topictype) {
   const [isOpen, setOpen] = useState<boolean>(false);
 
-  // Helper to format clean display text for URLs
-  const formatUrlDisplay = (rawUrl: string) => {
+  const formatUrlDisplay = (rawUrl: string, index: number) => {
     try {
       const parsed = new URL(rawUrl);
-      return parsed.hostname.replace("www.", "") + parsed.pathname;
+      const domain = parsed.hostname.replace("www.", "");
+      const path = parsed.pathname !== "/" ? parsed.pathname : "";
+      const fullPath = domain + path;
+
+      return fullPath.length > 35 ? `${fullPath.slice(0, 32)}...` : fullPath;
     } catch {
-      return rawUrl;
+      return `Link ${index + 1}`;
     }
   };
 
   return (
-    <div className="border border-[#251E38] rounded-lg overflow-hidden bg-[#181622] shadow-sm mb-3 sm:mb-4 transition-all">
-      {/* Header Button: Responsive padding & focus accessibility */}
+    <div className="border border-[#251E38] rounded-lg overflow-hidden bg-[#181622] shadow-sm mb-3 sm:mb-4 transition-all w-full max-w-full">
+      {/* Header Button */}
       <button
         type="button"
         onClick={() => setOpen(!isOpen)}
@@ -28,7 +31,7 @@ export function Topic({ title, description, author, urls }: Topictype) {
             {title}
           </span>
         </div>
-        
+
         <svg
           className={`w-5 h-5 text-[#8C8A99] shrink-0 transform transition-transform duration-200 ${
             isOpen ? "rotate-180" : "rotate-0"
@@ -46,26 +49,25 @@ export function Topic({ title, description, author, urls }: Topictype) {
         </svg>
       </button>
 
-      {/* Expanded Details */}
       {isOpen && (
-        <div className="p-3.5 sm:p-4 border-t border-[#251E38] bg-[#181622]/95 space-y-4">
-          <p className="text-xs sm:text-sm text-[#8C8A99] leading-relaxed">
+        <div className="p-3.5 sm:p-4 border-t border-[#251E38] bg-[#181622]/95 space-y-4 w-full min-w-0">
+          <p className="text-xs sm:text-sm text-[#8C8A99] leading-relaxed break-words">
             {description}
           </p>
 
-          <div>
+          <div className="min-w-0 w-full">
             <h4 className="text-[11px] sm:text-xs font-bold text-[#8C8A99] uppercase tracking-wider mb-2">
               Resources
             </h4>
-            
-            <ul className="space-y-2">
+
+            <ul className="space-y-2 w-full min-w-0">
               {urls.map((url, index) => {
                 const currentAuthor = author?.[index];
 
                 return (
                   <li
                     key={index}
-                    className="flex flex-col sm:flex-row sm:items-center text-xs sm:text-sm text-white bg-[#251E38]/40 p-2.5 sm:p-2 rounded border border-[#251E38] gap-1.5 sm:gap-2.5 min-w-0"
+                    className="flex flex-col sm:flex-row sm:items-center text-xs sm:text-sm text-white bg-[#251E38]/40 p-2.5 sm:p-2 rounded border border-[#251E38] gap-1.5 sm:gap-2.5 w-full min-w-0 overflow-hidden"
                   >
                     <div className="flex items-center gap-2 shrink-0">
                       <span className="w-2 h-2 rounded-full bg-[#8E52FF] shrink-0"></span>
@@ -82,9 +84,9 @@ export function Topic({ title, description, author, urls }: Topictype) {
                       target="_blank"
                       rel="noopener noreferrer"
                       title={url}
-                      className="text-gray-300 hover:text-[#8E52FF] active:text-[#8E52FF] hover:underline truncate min-w-0 transition-colors pl-4 sm:pl-0"
+                      className="text-gray-300 hover:text-[#8E52FF] active:text-[#8E52FF] hover:underline transition-colors block w-full min-w-0 break-all sm:truncate pl-4 sm:pl-0"
                     >
-                      {formatUrlDisplay(url)}
+                      {formatUrlDisplay(url, index)}
                     </a>
                   </li>
                 );
